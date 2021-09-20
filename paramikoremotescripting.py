@@ -13,8 +13,8 @@ import os
 import time
 
 #Here we open a yaml file called config.yaml
-#we extract eact relevant title from our yaml dictionary object
-#we assign the relevant title to a variable to use in the paramiko section
+#we extract eact relevant element from our yaml dictionary object
+#we assign the relevant element to a variable to use in the paramiko section
 
 with open('yaml/config.yaml') as yamlfile:
     data = yaml.load(yamlfile, Loader=yaml.FullLoader)
