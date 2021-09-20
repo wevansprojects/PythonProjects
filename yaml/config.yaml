@@ -1,0 +1,18 @@
+#configuration script for remote access
+#Note using the format below we can easily extract
+#the data because python parses it as a string
+
+#note the username and password must be running on the server
+#also note the private key must be created 
+#with the public key on the server otherwise you cannot remote in
+
+user: username
+password: password 
+port: 22
+privatekey: /home/someuser/.ssh/id_rsa
+
+#use a for loop to loop through the multiple servers 
+
+servers:
+  - 1.1.1.1
+  - 2.2.2.2
